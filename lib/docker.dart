@@ -17,6 +17,9 @@ class _MyAppState extends State<MyApp> {
     var response = await http.get(url);
     print(response.body);
     // print(cmd);
+    setState((){ 
+    output=responce.body
+    });
   }
 
   var cmd;
